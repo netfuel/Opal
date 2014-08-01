@@ -1,0 +1,17 @@
+{{!< default}}
+
+{{#post}}
+
+    {{> full-post}}
+
+    {{! Add the comments partial template (currently only Disqus comments) }}
+
+    <section id="comments">
+	    {{> comments}}
+    </section>
+
+{{/post}}
+
+<footer class="footer" role="contentinfo">
+    All content &copy; {{@blog.title}}. Powered by <a href="https://ghost.org/" target="_blank">Ghost</a> using <a href="https://github.com/netfuel/Opal" target="_blank">Opal</a> by <a href="http://twitter.com/netfuel" target="_blank">@netfuel</a>.
+</footer> <!-- end footer -->

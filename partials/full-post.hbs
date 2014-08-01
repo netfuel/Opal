@@ -1,0 +1,41 @@
+{{! This template displays a post in its entirety.
+    It is used to display the latest post in the index, and any single post }}
+<article class="hentry {{post_class}}" role="article">
+
+    <header class="article-header">
+    <h1>
+        {{title}}
+    </h1>
+    {{#if tags}}
+            <p class="tags">
+                <span class="tags-title">
+                    {{#each tags}}
+                        <span class="icon-tag">{{this.name}}</span>
+                    {{/each}}
+                </span>
+            </p>
+        {{/if}}
+    </header> <!-- end article header -->
+
+    <section class="entry-content clearfix">
+        {{content}}
+    </section> <!-- end article section -->
+
+    <footer class="article-footer">
+
+        <div id="share">
+               Share:&nbsp;
+            <a class="twitter" href="http://twitter.com/share?text={{@blog.title}}&mdash;{{title}}&amp;url={{@blog.url}}{{url}}" onclick="window.open(this.href, 'twitter-share', 'width=550,height=235');return false;">
+                <span class="icon-twitter"></span><span class="hidden">Twitter</span>
+            </a>
+            <a class="facebook" href="https://www.facebook.com/sharer/sharer.php?u={{@blog.url}}{{url}}" onclick="window.open(this.href, 'facebook-share','width=580,height=296');return false;">
+                <span class="icon-facebook"></span>  <span class="hidden">Facebook</span>
+            </a>
+            <a class="googleP" href="https://plus.google.com/share?url={{@blog.url}}{{url}}" onclick="window.open(this.href, 'google-plus-share', 'width=490,height=530');return false;">
+                <span class="icon-gplus"></span>  <span class="hidden">Google+</span>
+            </a>
+        </div>
+
+    </footer> <!-- end article footer -->
+
+</article>

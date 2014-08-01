@@ -1,0 +1,68 @@
+//
+// THE MASS CONFIG
+// --------------------------------------------------
+
+// Global values
+// --------------------------------------------------
+
+//links
+$primary-a: 		blue;
+$secondary-a: 		purple;
+$tertiary-a: 		orange;
+
+//
+// Color Swatches
+// --------------------------------------------------
+$matt:        	#181E21;
+$matt-dark:		#7c102d;
+$txt-color:		#1E1E1E;
+
+// Main Colors
+// -------------------------
+$base:             $txt-color;
+
+$gray:             #CCCCCC;
+$lightgray:        #EFEFEF;
+$inverse:          white;
+
+$success:          green;
+$danger:           red;
+$warning:          pink;
+$info:             yellow;
+
+$link-color:       $matt;
+$link-hover-color: $matt-dark;
+
+
+// Typography
+// -------------------------
+@import url(http://fonts.googleapis.com/css?family=Open+Sans:400,300,700);
+
+$base-font-family: "Open Sans", "Helvetica", sans-serif;
+$base-font-size: 18px;
+$base-line-height: 1.75;
+
+$h1: $base-font-size * 4.429;
+$h2: $base-font-size * 3.714;
+$h3: $base-font-size * 2.857;
+$h4: $base-font-size * 2.071;
+$h5: $base-font-size * 2;
+$h6: $base-font-size * 1.714;
+
+// Inputs
+// -------------------------
+$input-border-radius: 6px;
+
+// Buttons
+$button-text:           $inverse;
+$button-hover:          mix($lightgray, white, 80%);
+$button-active:         mix($lightgray, black, 85%);
+$button-success-hover:  mix($success, white, 80%);
+$button-success-active: mix($success, black, 85%);
+$button-danger-hover:   mix($danger, white, 80%);
+$button-danger-active:  mix($danger, black, 85%);
+$button-warning-hover:  overlay($warning, darken(white, 37.5%));
+$button-warning-active: mix($warning, black, 85%);
+$button-inverse-hover:  overlay($base, darken(white, 37.5%));
+$button-inverse-active: mix($base, black, 85%);
+
